@@ -15,6 +15,7 @@ local function help()
             -lua      : Nuevo script de tipo lua
             -p5js     : Nuevo proyecto de tipo p5js
             -bash     : Nuevo script de tipo bash
+            -sh       : Nuevo script de tipo sh
             -sveltejs : Nuevo proyecto de tipo sveltejs
             -angular  : Nuevo proyecto de angular
             -stack    : Nuevo proyecto de stack/haskell
@@ -50,6 +51,8 @@ elseif arg[1] == '-p5js' then
     os.execute('cp -rv ' .. phat .. '/p5js ./' .. arg[2])
 elseif arg[1] == '-bash' then
     os.execute('cp -v ' .. phat .. '/bash ./' .. arg[2] .. '.sh')
+elseif arg[1] == '-sh' then
+    os.execute('cp -v ' .. phat .. '/sh ./' .. arg[2] .. '.sh')
 elseif arg[1] == '-sveltejs' then
     os.execute('npx degit sveltejs/template ./' .. arg[2])
 elseif arg[1] == '-angular' then
