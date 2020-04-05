@@ -1,3 +1,3 @@
 #!/bin/sh
-curl wttr.in
+curl wttr.in | less -R
 
