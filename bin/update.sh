@@ -20,4 +20,4 @@ echo 'Actualizando flatpak'
 flatpak update
 echo 'Actualizando rust ⚙'
 rustup update
-
+cargo install-update -a
